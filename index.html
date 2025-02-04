@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><header>
+        <h1>Think_Ahead</h1>
+        <p>Your Smart Study Planner</p>
+    </header>
+    </title>
+    <link rel="stylesheet" href="Planner.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('6.jpg');
+            background-size:cover;
+            background-attachment: fixed;
+            color: #010101;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(139, 122, 122, 0.7);
+            padding: 50px;
+        }
+        .hero {
+            padding: 50px;
+            font-size: 18px;
+            font-family: 'Lobster', cursive;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .feature {
+            background: rgba(0, 66, 92, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+        footer {
+            background: rgba(79, 41, 113, 0.7);
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .task-form {
+            padding: 20px;
+            margin-top: 20px;
+            background: rgba(117, 46, 104, 0.8);
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .task-list {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(175, 121, 165, 0.8);
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .task-item {
+            background: rgba(0, 66, 92, 0.1);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Think_Ahead</h1>
+        <p>Your Smart Study Planner</p>
+    </header>
+    
+    <section class="hero">
+        <h2>Plan Smarter, Study Better!</h2>
+        <p>Organize your study schedule efficiently with Think_Ahead.</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="3.jpg" alt="Study Schedule" width="100%">
+            <h3>Smart Scheduling</h3>
+            <p>Customize your study plan based on your goals.</p>
+        </div>
+        <div class="feature">
+            <img src="4.jpg" alt="Reminders" width="100%">
+            <h3>Reminders & Alerts</h3>
+            <p>Never miss a study session with automated reminders.</p>
+        </div>
+        <div class="feature">
+            <img src="5.jpg" alt="Progress Tracker" width="100%">
+            <h3>Progress Tracking</h3>
+            <p>Monitor your learning progress and improve daily.</p>
+        </div>
+    </section>
+
+    <!-- Task Form Section -->
+    <section class="task-form">
+        <h3>Add Study Task</h3>
+        <form id="taskForm">
+            <label for="studySubject">Study Subject:</label>
+            <input type="text" id="studySubject" name="studySubject" placeholder="Enter the subject" required>
+            <br>
+            
+            <label for="task">Task Description:</label>
+            <input type="text" id="task" name="task" placeholder="Enter the task description" required>
+            <br>
+            
+            <label for="goal">Goal:</label>
+            <input type="text" id="goal" name="goal" placeholder="Enter your goal" required>
+            <br>
+    
+            <label for="startdate">Starting Date:</label>
+            <input type="datetime-local" id="startdate" name="startdate" required>
+            <br>
+            
+            <label for="finishDate">Finishing Date:</label>
+            <input type="datetime-local" id="finishDate" name="finishDate" required>
+            <br>
+            
+        
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Button</title>
+    <style>
+        button {
+            background-color: rgb(84, 44, 86);
+            color: rgb(247, 239, 239);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(53, 53, 92);
+        }
+    </style>
+</head>
+<body>
+
+<button type="submit">Add Task</button>
+
+</body>
+</html>
+
+        </form>
+    </section>
+    
+    </section>
+
+    <!-- Task List Section -->
+    <section class="task-list">
+        <h3>Your Tasks</h3>
+        <div id="taskContainer"></div>
+    </section>
+
+    <section class="games">
+        <h3>Relax & Play!</h3>
+        <p>Take a quick break and refresh your mind with these stress-relief games.</p>
+        <div class="game">
+            <button onclick="startMemoryGame()">Memory Match Game</button>
+        </div>
+        <div class="game">
+            <button onclick="startQuizGame()">Quick Quiz</button>
+        </div>
+        <div class="game">
+            <button onclick="startPuzzleGame()">Puzzle Solver</button>
+        </div>
+    </section>
+    
+    <script>
+        // Example game start functions
+        function startMemoryGame() {
+            alert('Starting the Memory Match Game!');
+            // Add memory game logic here
+        }
+        
+        function startQuizGame() {
+            alert('Starting the Quick Quiz!');
+            // Add quiz game logic here
+        }
+        
+        function startPuzzleGame() {
+            alert('Starting the Puzzle Solver!');
+            // Add puzzle game logic here
+        }
+    </script>
+    
+    
+    <footer>
+        <p>&copy; 2025 Think_Ahead | Smart Study Planner</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission and display tasks
+        document.getElementById('taskForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get the values from the form
+            const studySubject = document.getElementById('studySubject').value;
+            const taskDescription = document.getElementById('task').value;
+
+            // Create a new task item
+            const taskItem = document.createElement('div');
+            taskItem.classList.add('task-item');
+            taskItem.innerHTML = `<strong>${studySubject}</strong>: ${taskDescription}`;
+
+            // Add the task item to the task container
+            document.getElementById('taskContainer').appendChild(taskItem);
+
+            // Clear the form fields
+            document.getElementById('taskForm').reset();
+        });
+    </script>
+</body>
+</html>
