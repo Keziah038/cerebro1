@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: large;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #34ccff;
+    padding: 1em;
+    text-align: center;
+    font-size: 60px;
+       
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+
+}
+
+header nav a {
+    color: #ad3939;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.planner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.planner form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planner label {
+    margin-bottom: 10px;
+}
+
+.planner input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.planner button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #511616;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
